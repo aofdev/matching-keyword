@@ -1,0 +1,24 @@
+[package]
+name = "matching-keyword"
+version = "0.1.0"
+authors = ["aofdev <aof.dev@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+csv = "1.1"
+regex = "1.5"
+aho-corasick = "0.7"
+rayon = "1.5"
+
+[dev-dependencies]
+criterion = "0.3"
+pprof = { version = "0.5", features = ["flamegraph", "criterion"] }
+
+[[bench]]
+name = "matcher_benchmark"
+harness = false
+
+[profile.bench]
+opt-level = 3
