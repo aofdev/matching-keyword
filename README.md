@@ -2,6 +2,11 @@
 
 > Keywords from JSON that match in CSV
 
+## Features ✨
+- Include words
+- Exclude words
+- Support operators AND or `+` to find words containing all terms separated
+
 ## Quick Start ⚡️
 
 ```bash
